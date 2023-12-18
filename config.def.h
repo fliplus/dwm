@@ -61,6 +61,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave") },
 	{ MODKEY,                       XK_d,      spawn,          SHCMD("discord") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("alacritty -e lf") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("~/.config/scripts/screenshot") },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("~/.config/scripts/shutdown") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
