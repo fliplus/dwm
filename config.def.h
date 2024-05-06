@@ -62,6 +62,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_q,      spawn,          SHCMD("alacritty") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("firefox-developer-edition") },
 	{ MODKEY,                       XK_d,      spawn,          SHCMD("discord") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("alacritty -e lf") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
