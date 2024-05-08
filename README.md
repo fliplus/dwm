@@ -12,6 +12,8 @@ This is my personal fork of [DWM](https://dwm.suckless.org/), tailored to fit my
   - Enables one layout per tag.
 - [`tiledmove`](https://dwm.suckless.org/patches/tiledmove/)
   - Tiled clients when moved will swap with other tiled clients that overlap with the cursor.
+- [`alwayscenter`](https://dwm.suckless.org/patches/alwayscenter/)
+  - All floating windows are centered.
 
 This fork contains undocumented modifications as well.
 

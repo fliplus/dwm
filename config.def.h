@@ -27,8 +27,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "lf",       NULL,       NULL,       0,            1,           -1 }
 };
 
 /* layout(s) */
@@ -62,7 +61,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_q,      spawn,          SHCMD("alacritty") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("firefox-developer-edition") },
 	{ MODKEY,                       XK_d,      spawn,          SHCMD("discord") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("alacritty -e lf") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("alacritty --class=lf -o \"window.dimensions={columns=120,lines=30}\" -e lf") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
